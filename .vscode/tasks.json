@@ -1,0 +1,55 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-std=c++11",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}.exe",
+			        "-I", "F:/Programing/Tool/OpenCV-4.1.0/include",
+			        "-I", "F:/Programing/Tool/OpenCV-4.1.0/include/opencv2",
+                    //"-I", "F:/Programing/Tool/OpenCV-4.1.0/x64/mingw",
+                    //"-I", "F:/Programing/Tool/OpenCV-4.1.0/x64/mingw/bin",
+                    "-L", "F:/Programing/Tool/OpenCV-4.1.0/x64/mingw/lib",
+			        "-l", "opencv_core410",
+			        "-l", "opencv_imgproc410",
+			        "-l", "opencv_imgcodecs410",
+			        "-l", "opencv_video410",
+			        "-l", "opencv_ml410",
+			        "-l", "opencv_highgui410",
+			        "-l", "opencv_objdetect410",
+			        "-l", "opencv_flann410",
+			        "-l", "opencv_imgcodecs410",
+			        "-l", "opencv_photo410",
+			        "-l", "opencv_videoio410"
+            ],
+            "problemMatcher":{
+                "owner": "cpp",
+                "fileLocation":[
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern":[
+                    {
+                        "regexp": "^([^\\\\s].*)\\\\((\\\\d+,\\\\d+)\\\\):\\\\s*(.*)$",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+ 
