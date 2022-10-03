@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "iostream": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "ostream": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "C:/mingw64/bin/gcc.exe",
   "C_Cpp_Runner.cppCompilerPath": "g++",
