@@ -83,7 +83,7 @@ void Dilation( int, void* );
 
 int main( int argc, char const *argv[] )
 {
-  const char* filename = argc >=2 ? argv[1] : "./pic/wen.png";
+  const char* filename = argc >=2 ? argv[1] : "./pic/cat.jpg";
 //   const char* filename="./pic/cat.jpg";
   src = imread(filename, IMREAD_COLOR );
   if( src.empty() )
