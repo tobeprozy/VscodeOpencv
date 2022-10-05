@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
     //   3，BORDER_WRAP：填充边缘用对应的另一边的像素
     //   4，BORDER_DEFAULT：不做操作。
     GaussianBlur(src, src, Size(3, 3), 0, 0, BORDER_DEFAULT);
-    cvtColor(src, src_gray, COLOR_BGR2BGRA);
+    cvtColor( src, src_gray, COLOR_BGR2GRAY );  
     Mat grad_x, grad_y;
     Mat abs_grad_x, abs_grad_y;
 
